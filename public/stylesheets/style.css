@@ -1,0 +1,119 @@
+#main-section {
+  height: 100%;
+  width: 81.9%;
+  background-color: black;
+  color: white;
+  padding: 32vh 10vw 0 10vw;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+}
+
+span {
+  font-size: 40px;
+  font-style: italic;
+  color: rgb(91, 91, 238);
+}
+
+#main-section-index {
+  height: 155%;
+  width: 102%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.main-section-index-div {
+  height: 35%;
+  width: 400px;
+  background-color: white;
+  border: 2px solid rgb(187, 183, 183);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section-index-div:hover {
+  background-color: rgb(150, 146, 146);
+  border: 1px solid black;
+  color: white;
+}
+
+#main-section-index-div1 {
+  height: 240px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-section-index-div1-image {
+  height: 230px;
+  width: 40%;
+  margin: 7px 5px 5px 5px;
+}
+
+#main-section-index-div1-image img {
+  height: 220px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#main-section-index-div1-detail {
+  height: 230px;
+  width: 55%;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+#main-section-index-div2 {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main-section-index-div2 a {
+  height: 28px;
+  width: 20%;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(91, 91, 238);
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 3px 0px 3px;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+#main-section-index-div2 a:hover {
+  background-color: white;
+  border: 2px solid rgb(91, 91, 238);
+  color: rgb(91, 91, 238);
+}
+
+#footer {
+  height: 1%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}

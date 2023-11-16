@@ -1,0 +1,85 @@
+<%- include('../partials/header') %>
+<div id="nav">
+  <h1 id="nav-h1">YOUR ACCOMMODATION</h1>
+  <div>
+    <a class="homepage-links" href="/owners">ALL LISTING</a>
+    <a class="homepage-links" href="/logout">LOG OUT</a>
+  </div>
+</div>
+<div id="section">
+  <h2>ADD YOUR LISTING</h2>
+  <div id="create-form">
+    <form
+      action="/owners/<%= owner._id %>"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input
+        type="text"
+        name="address"
+        placeholder="Address"
+        required
+        autocomplete="off"
+      /><br />
+      <input
+        type="date"
+        name="moveInDate"
+        placeholder="YYYY-MM-DD"
+        min="2022-08-31"
+        max="2022-12-31"
+        required
+        autocomplete="off"
+      /><br />
+      <input
+        type="number"
+        name="bedroom"
+        placeholder="Bedrooms"
+        min="1"
+        required
+        autocomplete="off"
+      /><br />
+      <input
+        type="number"
+        name="bathroom"
+        placeholder="bathrooms"
+        min="1"
+        required
+        autocomplete="off"
+      /><br />
+      <input
+        type="text"
+        name="utility"
+        placeholder="Utilities Included?Yes Or No"
+        required
+        autocomplete="off"
+      /><br />
+      <input
+        type="text"
+        name="furnish"
+        placeholder="Furnished?Yes Or No"
+        required
+        autocomplete="off"
+      /><br />
+      <input
+        type="number"
+        name="parking"
+        placeholder="Parking"
+        min="0"
+        required
+        autocomplete="off"
+      /><br />
+      <input
+        type="number"
+        name="rent"
+        placeholder="Rent"
+        min="0"
+        required
+        autocomplete="off"
+      /><br />
+      <label for="Image">Image</label><br>
+      <input type="file" name="image" required id="image" /><br />
+      <button>ADD LISTING</button>
+    </form>
+  </div>
+</div>
+<%- include('../partials/footer') %>
